@@ -11,7 +11,7 @@ const Target = (props) => {
         {y: targetref.current.position.y +0.5, duration: 1.5, yoyo: true, repeat: -1,})
     });
   return (
-  <mesh {...props} ref={targetref} rotation={[0, Math.PI/5, 0]}>
+  <mesh {...props} ref={targetref} rotation={[0, Math.PI/5 , 0]}scale={1.5}>
     <primitive object={scene} />
   </mesh>  
   )
